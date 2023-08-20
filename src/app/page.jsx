@@ -345,7 +345,7 @@ export default async function Home() {
             Software Developer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I'm Tony DU, a diligent and flexible full-stack software developer with solid mathematical knowledge and machine learning experience. Eager to work as a software engineer and open to Data Analyst. Enthusiastic about technology, coding, and continually expanding my knowledge. 
+          I am Tony DU, a diligent and flexible full-stack software developer with solid mathematical knowledge and machine learning experience. Eager to work as a software engineer and open to Data Analyst. Enthusiastic about technology, coding, and continually expanding my knowledge. 
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
