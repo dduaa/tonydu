@@ -15,12 +15,12 @@ import logoSZ from '@/images/logos/sz.png'
 import logoPremium from '@/images/logos/logo.jpg'
 import logoACL from '@/images/logos/acl.svg'
 import logoUST from '@/images/logos/ust.jpg'
-import logoFlashGreen from '@/images/logos/fg.png'
-import image1 from '@/images/photos/premiumproject.png'
-import image2 from '@/images/photos/flashgreen.png'
-import image3 from '@/images/photos/bibo.png'
-import image4 from '@/images/photos/stl.png'
-import image5 from '@/images/photos/code.png'
+import logoFlashGreen from '@/images/logos/flashgreen.png'
+import project1 from '@/images/photos/premiumproject.png'
+import project2 from '@/images/photos/flashgreen.png'
+import project3 from '@/images/photos/bibo.png'
+import project4 from '@/images/photos/stl.png'
+import project5 from '@/images/photos/code.png'
 
 function MailIcon(props) {
   return (
@@ -92,7 +92,7 @@ function SocialLink({ icon: Icon, ...props }) {
 function CopyEmail() {
   navigator.clipboard.writeText("hi@tonydu.com");
 }
-function Newsletter() {
+function EmailContact() {
   return (
     <div
       action="#"
@@ -102,9 +102,6 @@ function Newsletter() {
         <MailIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Contact Me</span>
       </h2>
-      {/* <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
-      </p> */}
       <div className="mt-6 flex">
         <input
           type="email"
@@ -185,8 +182,8 @@ function Conference({ content }) {
   )
 }
 
-function Resume() {
-  let resume = [
+function Work() {
+  let workExperience = [
     {
       company: 'Premium Dental Lab HK',
       title: 'Software Engineer',
@@ -224,11 +221,11 @@ function Resume() {
         <span className="ml-3">Work</span>
       </h2>
       <ol className="mt-6 space-y-4">
-        {resume.map((role, roleIndex) => (
+        {workExperience.map((role, roleIndex) => (
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <Button href="/files/Tony's Resume 20230817.pdf" variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -236,7 +233,7 @@ function Resume() {
   )
 }
 function Education() {
-  let resume = [
+  let schoolExperience = [
     {
       company: 'Hong Kong University Of Science and Technology',
       title: 'Bachelor of Engineering - BE, ECE',
@@ -268,7 +265,7 @@ function Education() {
       </h2>
       
       <ol className="mt-6 space-y-4">
-        {resume.map((role, roleIndex) => (
+        {schoolExperience.map((role, roleIndex) => (
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
@@ -286,7 +283,7 @@ function Education() {
   )
 }
 function Publication() {
-  let resume = [
+  let publications = [
     {
       title: 'Improving Fine-grained Entity Typing with Entity Linking',
       authors: 'Hongliang Dai, Donghong Du, Xin Li, Yangqiu Song',
@@ -303,7 +300,7 @@ function Publication() {
           <span className="ml-3">Publication</span>
         </h2>
         <ol className="mt-6 space-y-4">
-          {resume.map((role, roleIndex) => (
+          {publications.map((role, roleIndex) => (
             <Conference key={roleIndex} content={role} />
           ))}
         </ol>
@@ -318,7 +315,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {[project1, project2, project3, project4, project5].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
@@ -372,8 +369,8 @@ export default async function Home() {
             <Education />
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
-            <Resume />
+            <EmailContact />
+            <Work />
           </div>
         </div>
       </Container>
