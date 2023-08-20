@@ -232,9 +232,28 @@ function Avatar({ large = false, className, ...props }) {
     </Link>
   )
 }
+function AvatarLarge({className, ...props }) {
+  return (
+    <Link
+      href="/"
+      aria-label="Home"
+      className={clsx(className, 'pointer-events-auto')}
+      {...props}
+    >
+      <Image
+        src={avatarImage}
+        alt=""
+        sizes='4rem'
+        className='rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16'
+        priority
+      />
+    </Link>
+  )
+}
 
 export function Header() {
-  let isHomePage = usePathname() === '/' || usePathname() === ''
+  let isHomePage = false;
+  // let isHomePage = usePathname() === '/'
 
   let headerRef = useRef(null)
   let avatarRef = useRef(null)
@@ -375,8 +394,7 @@ export function Header() {
                       transform: 'var(--avatar-border-transform)',
                     }}
                   />
-                  <Avatar
-                    large
+                  <AvatarLarge 
                     className="block h-16 w-16 origin-left"
                     style={{ transform: 'var(--avatar-image-transform)' }}
                   />
