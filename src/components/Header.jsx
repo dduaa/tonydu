@@ -1,5 +1,4 @@
-'use client'
-
+'use client';
 import { Fragment, useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -7,7 +6,6 @@ import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
-
 import { Container } from '@/components/Container'
 import avatarImage from '@/images/avatar.jpg'
 
@@ -236,7 +234,7 @@ function Avatar({ large = false, className, ...props }) {
 }
 
 export function Header() {
-  let isHomePage = usePathname() === '/'
+  let isHomePage = usePathname() === '/' || usePathname() === ''
 
   let headerRef = useRef(null)
   let avatarRef = useRef(null)

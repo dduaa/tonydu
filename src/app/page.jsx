@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
-
+import { saveAs } from "file-saver";
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import {
@@ -213,6 +213,12 @@ function Work() {
       end: '2017 Aug',
     },
   ]
+  const saveFile = () => {
+    saveAs(
+      "@/files/Tony's Resume 20230817.pdf",
+      "TonyDU_CV.pdf"
+    );
+  };
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
@@ -225,7 +231,7 @@ function Work() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="/files/Tony's Resume 20230817.pdf" variant="secondary" className="group mt-6 w-full">
+      <Button onClick={saveFile} variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
