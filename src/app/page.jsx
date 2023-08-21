@@ -16,11 +16,11 @@ import logoPremium from '@/images/logos/logo.jpg'
 import logoACL from '@/images/logos/acl.svg'
 import logoUST from '@/images/logos/ust.jpg'
 import logoFlashGreen from '@/images/logos/flashgreen.png'
-import project1 from '@/images/photos/premiumproject.png'
-import project2 from '@/images/photos/flashgreen.png'
-import project3 from '@/images/photos/bibo.png'
+import project1 from '@/images/photos/code.png'
+import project2 from '@/images/photos/premiumproject.png'
+import project3 from '@/images/photos/flashgreen.png'
 import project4 from '@/images/photos/stl.png'
-import project5 from '@/images/photos/code.png'
+import project5 from '@/images/photos/bibo.png'
 
 function MailIcon(props) {
   return (
