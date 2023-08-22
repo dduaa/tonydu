@@ -36,10 +36,16 @@ const projects = [
     link: { href: 'https://flashgreen.io/', label: 'flashgreen.io' },
   },
   {
-    name: 'Stock Managerment System',
+    name: 'Hong Kong Tour Website',
     description:
-      'AngularJS, Typescript, ExpressJS, MongoDB',
-    link: { href: '#', label: 'Unavailable for demo' },
+      'AngularJS, Typescript, Tailwindcss',
+    link: { href: 'https://shoreexcursions-hk.com/', label: 'shoreexcursions-hk.com' },
+  },
+  {
+    name: 'Hong Kong Commercial Property Website (demo)',
+    description:
+      'AngularJS, Typescript, Tailwindcss, Animation',
+    link: { href: 'https://coastline.dreamtec.ai/', label: 'coastline.dreamtec.ai' },
   },
 ]
 
@@ -63,7 +69,7 @@ export default function Projects() {
   return (
     <SimpleLayout
       title="My Projects"
-      intro="Here are some of the projects I’ve worked on."
+      intro="Here are some of the projects I’ve worked on (including some freelance jobs)."
     >
       <ul
         role="list"
