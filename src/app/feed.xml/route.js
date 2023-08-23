@@ -1,5 +1,3 @@
-import assert from 'assert'
-import * as cheerio from 'cheerio'
 import { Feed } from 'feed'
 
 export async function GET(req) {
@@ -21,7 +19,7 @@ export async function GET(req) {
     id: siteUrl,
     link: siteUrl,
     image: `${siteUrl}/favicon.ico`,
-    favicon: `${siteUrl}/faviconCartoon.ico`,
+    favicon: `${siteUrl}/favicon.ico`,
     copyright: `All rights reserved ${new Date().getFullYear()}`,
     feedLinks: {
       rss2: `${siteUrl}/feed.xml`,

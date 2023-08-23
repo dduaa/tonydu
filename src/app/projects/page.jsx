@@ -8,9 +8,7 @@ const projects = [
     name: 'Dental Ordering Platform',
     description:
       'Agile Development, ExpressJS, ThreesJS, MySQL, Linux Server, Nginx, Express Handerlbar, Bootstrap',
-    link: { href: 'https://www.premiumlabhk.com', label: 'premiumlabhk.com' },
-    link:{link:'#', label:'Restricted Usage'}
-    // logo: logoACL,
+    link:{href:'#', label:'Restricted Usage'}
   },
   {
     name: 'Company Website',
