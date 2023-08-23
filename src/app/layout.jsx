@@ -1,6 +1,6 @@
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
-
+import { Analytics } from '@vercel/analytics/react';
 import '@/styles/tailwind.css'
 
 export const metadata = {
@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
             <Layout>{children}</Layout>
           </div>
         </Providers>
+        <Analytics />
       </body>
     </html>
   )
