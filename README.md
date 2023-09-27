@@ -1,1 +1,1 @@
-Personal Website of Tony DU based on Spotlight template.
+Personal Website of Tony DU.
