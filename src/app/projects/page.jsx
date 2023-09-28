@@ -11,6 +11,12 @@ const projects = [
     link:{href:'#', label:'Restricted Usage'}
   },
   {
+    name: 'React Chatbot',
+    description:
+      'ReactJS, Firebase',
+    link: { href: 'https://chatroombackend20230917.web.app', label: 'React Chatbot' },
+  },
+  {
     name: 'Company Website',
     description:
       'ReactJS, TailwindCSS, Firebase hosting',
