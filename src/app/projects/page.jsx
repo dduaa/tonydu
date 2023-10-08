@@ -11,6 +11,12 @@ const projects = [
     link:{href:'#', label:'Restricted Usage'}
   },
   {
+    name: 'Content Management System',
+    description:
+      'React, GraphCMS, GraphQL, Next, Tailwind',
+    link:{href:'https://react-cms-eosin.vercel.app/', label:'Daily Record Demo'}
+  },
+  {
     name: 'React Chatbot',
     description:
       'ReactJS, Firebase',
