@@ -4,12 +4,12 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
 const projects = [
-  {
-    name: 'Dental Ordering Platform',
-    description:
-      'Agile Development, ExpressJS, ThreesJS, MySQL, Linux Server, Nginx, Express Handerlbar, Bootstrap',
-    link:{href:'#', label:'Restricted Usage'}
-  },
+  // {
+  //   name: 'Dental Ordering Platform',
+  //   description:
+  //     'Agile Development, ExpressJS, ThreesJS, MySQL, Linux Server, Nginx, Express Handerlbar, Bootstrap',
+  //   link:{href:'#', label:'Restricted Usage'}
+  // },
   {
     name: 'Content Management System',
     description:
