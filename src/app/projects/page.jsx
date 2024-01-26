@@ -52,12 +52,12 @@ const projects = [
   //     'AngularJS, Typescript, Tailwindcss',
   //   link: { href: 'https://shoreexcursions-hk.com/', label: 'shoreexcursions-hk.com' },
   // },
-  {
-    name: 'Hong Kong Commercial Property Website (demo)',
-    description:
-      'AngularJS, Typescript, Tailwindcss, Animation',
-    link: { href: 'https://coastline.dreamtec.ai/', label: 'coastline.dreamtec.ai' },
-  },
+  // {
+  //   name: 'Hong Kong Commercial Property Website (demo)',
+  //   description:
+  //     'AngularJS, Typescript, Tailwindcss, Animation',
+  //   link: { href: 'https://coastline.dreamtec.ai/', label: 'coastline.dreamtec.ai' },
+  // },
 ]
 
 function LinkIcon(props) {
