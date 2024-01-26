@@ -46,12 +46,12 @@ const projects = [
       'Python, Flask, Shopify, HTML, JS, CSS, Bootstrap',
     link: { href: 'https://flashgreen.io/', label: 'flashgreen.io' },
   },
-  {
-    name: 'Hong Kong Tour Website',
-    description:
-      'AngularJS, Typescript, Tailwindcss',
-    link: { href: 'https://shoreexcursions-hk.com/', label: 'shoreexcursions-hk.com' },
-  },
+  // {
+  //   name: 'Hong Kong Tour Website',
+  //   description:
+  //     'AngularJS, Typescript, Tailwindcss',
+  //   link: { href: 'https://shoreexcursions-hk.com/', label: 'shoreexcursions-hk.com' },
+  // },
   {
     name: 'Hong Kong Commercial Property Website (demo)',
     description:
