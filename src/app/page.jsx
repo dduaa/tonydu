@@ -189,7 +189,7 @@ function Work() {
       title: 'Software Engineer',
       logo: logoPremium,
       start: '2022 June',
-      end: '2023 June',
+      end: '2024 Nov',
     },
     {
       company: 'Flash Green',
